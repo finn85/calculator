@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Training</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="screen">
+		<p id="screenNumbers">0</p>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td><input type="button" value="C" onclick="cancel()"></td>
+				<td></td>
+				<td></td>
+				<td><input type="button" value="+" onclick="sign('+')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="writeNumbers(1)"></td>
+				<td><input type="button" value="2" onclick="writeNumbers(2)"></td>
+				<td><input type="button" value="3" onclick="writeNumbers(3)"></td>
+				<td><input type="button" value="-" onclick="sign('-')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="writeNumbers(4)"></td>
+				<td><input type="button" value="5" onclick="writeNumbers(5)"></td>
+				<td><input type="button" value="6" onclick="writeNumbers(6)"></td>
+				<td><input type="button" value="x" onclick="sign('*')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="writeNumbers(7)"></td>
+				<td><input type="button" value="8" onclick="writeNumbers(8)"></td>
+				<td><input type="button" value="9" onclick="writeNumbers(9)"></td>
+				<td><input type="button" value="/" onclick="sign('/')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="0" onclick="writeNumbers(0)"></td>
+				<td><input type="button" value="00" onclick="writeNumbers('00')"></td>
+				<td><input type="button" value="." onclick="point()"></td>
+				<td><input type="button" value="=" onclick="equal()"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src = "script.js"></script>
+</body>
+</html>
